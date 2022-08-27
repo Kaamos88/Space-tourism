@@ -14,11 +14,12 @@
   backdrop-filter: blur(25px);
 }
 
-
 .navBar {
   margin: 0;
   display: flex;
+  padding-left: 10%;
   li {
+    cursor: pointer;
     text-transform: uppercase;
     letter-spacing: 0.169rem;
     font-size: 1rem;
@@ -26,14 +27,28 @@
     padding: 2rem 0;
     margin: 0 2rem;
     border-bottom: 3px solid transparent;
-    &:hover{
+    &:first-child {
       border-bottom: 3px solid #fff;
     }
-  }
+    &:hover{
+      border-bottom: 3px solid rgb(194, 194, 194);
 
+    }
+  }
   span{
     font-family: $font-second-bold;  
   }
-  
  }
 
+ .vl {
+  position: relative;
+  left: 50px;
+  z-index: 30;
+  width: 38%;
+  padding: 1px;
+  border-bottom: 1px solid rgba(110, 110, 110, 0.7);
+}
+
+ .icon {
+  margin-left: 4rem;
+ }

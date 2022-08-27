@@ -3,9 +3,9 @@ import s from "../styles/Nav.module.scss";
 const Nav = () => {
   return (
     <div className={s.container}>
-      <div>
+      <div className={s.icon}>
         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
-          <g fill="none" fill-rule="evenodd">
+          <g fill="none" fillRule="evenodd">
             <circle cx="24" cy="24" r="24" fill="#FFF" />
             <path
               fill="#0B0D17"
@@ -14,6 +14,7 @@ const Nav = () => {
           </g>
         </svg>
       </div>
+      <div className={s.vl}></div>
       <nav className={s.navContainer}>
         <ul className={s.navBar}>
           <li><span>00</span> Home</li>
