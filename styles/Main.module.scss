@@ -1,0 +1,22 @@
+@import 'variables';
+
+.main {
+  width: 100%;
+}
+
+.circleBtn {
+  border-radius: 100%;
+  border: 0;
+  width: 15rem;
+  height: 15rem;
+  text-transform: uppercase;
+  font-family: $font-prime;
+  font-weight: 400;
+  font-size: 1.75rem;
+}
+
+.welcomeText {
+  display: flex;
+  flex-direction: column;
+}
+
