@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import PlanetsNav from "./PlanetsNav";
-import s from "../styles/components/DestinationModule.module.scss";
+import s from "../styles/components/DestinationSection.module.scss";
 
 const DestinationModule = () => {
   const { planet } = useSelector((store) => store.destination);
@@ -8,10 +8,7 @@ const DestinationModule = () => {
   return (
     <div className={s.module}>
       <div className={s.imgSection}>
-        <h5>
-          <span>01</span> pick your destination
-        </h5>
-        <img src={planet.image} />
+        <img src={planet.images.png} />
       </div>
       <div className={s.textSection}>
         <PlanetsNav />

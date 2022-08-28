@@ -1,0 +1,22 @@
+@import '/styles/variables';
+
+.technologyModule { 
+  display: flex;
+  justify-content: space-between;
+  .textSection {
+    display: flex;
+    .text {
+      margin-top: 3rem;
+      margin-left: 8rem;
+    }
+    p { 
+    width: 29.375rem;
+    }
+  }
+  .image {
+    img{
+      float: right;
+    }
+  }
+
+}

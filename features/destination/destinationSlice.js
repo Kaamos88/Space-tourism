@@ -3,6 +3,8 @@ import destinationList from "../../data/destinationList";
 
 const initialState = {
   planet: destinationList[0],
+  navNumber: "00",
+  heading: "Pick your destination",
   activePlanet: 0,
 };
 
@@ -13,8 +15,7 @@ const destinationSlice = createSlice({
     showPlanet: (state, action) => {
       state.planet = destinationList[action.payload];
       state.activePlanet = action.payload;
-
-    }
+    },
   },
 });
 

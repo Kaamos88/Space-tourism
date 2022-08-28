@@ -1,0 +1,31 @@
+@import '/styles/variables';
+
+.crewModule {
+  display: flex;
+  height: 75%;
+  justify-content: space-around;
+  align-items: flex-end;
+  section {
+    width: 50%;
+  }
+  .text {
+    width: 50%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 11rem;
+    h4 {
+      color: #979797;
+    }
+    h3 {
+      padding: 1.5rem 0 ;
+    }
+  }
+  p {
+    width: 26rem;
+    height: 10rem;
+    color: $second-color;
+    line-height: 2rem;
+  }
+}

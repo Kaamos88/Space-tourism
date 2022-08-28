@@ -1,12 +1,9 @@
 import Link from "next/link";
+import { useSelector } from "react-redux";
 import s from "../styles/components/Nav.module.scss";
 
-const Nav = ({ home, destination, crew, technology }) => {
-  const nav00 = home ? s.active : "";
-  const nav01 = destination ? s.active : "";
-  const nav02 = crew ? s.active : "";
-  const nav03 = technology ? s.active : "";
-
+const Nav = () => {
+  const { navNumber } = useSelector((store) => store.nav);
   return (
     <div className={s.container}>
       <div className={s.icon}>
@@ -24,28 +21,28 @@ const Nav = ({ home, destination, crew, technology }) => {
       <nav className={s.navContainer}>
         <ul className={s.navBar}>
           <Link href="/">
-            <li className={nav00}>
+            <li className={navNumber === "00" ? s.active : ""}>
               <a>
                 <span>00</span> Home
               </a>
             </li>
           </Link>
           <Link href="/destination">
-            <li className={nav01}>
+            <li className={navNumber === "01" ? s.active : ""}>
               <a>
                 <span>01</span> Destination
               </a>
             </li>
           </Link>
           <Link href="/crew">
-            <li className={nav02}>
+            <li className={navNumber === "02" ? s.active : ""}>
               <a>
                 <span>02</span> Crew
               </a>
             </li>
           </Link>
           <Link href="/technology">
-            <li className={nav03}>
+            <li className={navNumber === "03" ? s.active : ""}>
               <a>
                 <span>03</span> Technology
               </a>

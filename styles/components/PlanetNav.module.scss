@@ -16,7 +16,7 @@
       font-family: $body-text;
       letter-spacing: 2.6px;
       &:hover:not(.active){
-        border-bottom: 3px solid rgb(194, 194, 194);
+        border-bottom: 3px solid rgba(255,255,255, 0.5);
       }
     }
   }

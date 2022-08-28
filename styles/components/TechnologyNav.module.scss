@@ -1,0 +1,28 @@
+@import '/styles/variables';
+
+.nav {
+  padding-left: 11rem;
+  ul {
+    padding: 0;
+    list-style: none;
+    .active {
+      background-color: rgb(255,255,255);
+      border: 1px solid transparent;
+      color: $prime-color;
+    }
+    li {
+      text-align: center;
+      line-height: 5rem;
+      vertical-align: middle;
+      margin: 2rem 2rem 2rem 0;
+      font-size: 2rem;
+      border: 1px solid rgba(255,255,255, 0.25);
+      border-radius: 100%;
+      width: 5rem;
+      height: 5rem;
+      &:hover:not(.active) {
+        border: 1px solid rgb(255,255,255);
+      }
+    }
+  }
+}
