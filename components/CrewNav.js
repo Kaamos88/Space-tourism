@@ -5,7 +5,7 @@ const CrewNav = () => {
   const dispatch = useDispatch();
   const { activePerson } = useSelector((store) => store.crew);
   return (
-    <div className={s.nav}>
+    <nav className={s.nav}>
       <ul>
         <li
           onClick={() => dispatch(showPerson(0))}
@@ -24,7 +24,7 @@ const CrewNav = () => {
           className={activePerson === 3 ? s.active : ""}
         ></li>
       </ul>
-    </div>
+    </nav>
   );
 };
 

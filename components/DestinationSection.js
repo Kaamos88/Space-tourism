@@ -6,11 +6,11 @@ const DestinationModule = () => {
   const { planet } = useSelector((store) => store.destination);
 
   return (
-    <div className={s.module}>
-      <div className={s.imgSection}>
+    <main className={s.module}>
+      <section className={s.imgSection}>
         <img src={planet.images.png} />
-      </div>
-      <div className={s.textSection}>
+      </section>
+      <section className={s.textSection}>
         <PlanetsNav />
         <div className={s.description}>
           <h2>{planet.name}</h2>
@@ -27,8 +27,8 @@ const DestinationModule = () => {
             <h5>{planet.travelTime}</h5>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
 

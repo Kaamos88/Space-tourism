@@ -5,7 +5,7 @@ import TechnologyNav from "./TechnologyNav";
 const TechnologySection = () => {
   const { technology } = useSelector((store) => store.technology);
   return (
-    <div className={s.technologyModule}>
+    <main className={s.technologyModule}>
       <section className={s.textSection}>
         <TechnologyNav />
         <div className={s.text}>
@@ -17,7 +17,7 @@ const TechnologySection = () => {
       <section className={s.image}>
         <img src={technology.images.portrait} />
       </section>
-    </div>
+    </main>
   );
 };
 

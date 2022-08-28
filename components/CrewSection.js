@@ -5,7 +5,7 @@ import CrewNav from "./CrewNav";
 const CrewSection = () => {
   const { person } = useSelector((store) => store.crew);
   return (
-    <div className={s.crewModule}>
+    <main className={s.crewModule}>
       <section className={s.text}>
         <div>
           <h4>{person.role}</h4>
@@ -17,7 +17,7 @@ const CrewSection = () => {
       <section>
         <img src={person.images.webp} />
       </section>
-    </div>
+    </main>
   );
 };
 

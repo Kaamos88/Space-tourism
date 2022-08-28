@@ -1,4 +1,5 @@
 import s from "../styles/components/Main.module.scss";
+import Link from "next/link";
 
 const Main = () => {
   return (
@@ -13,7 +14,10 @@ const Main = () => {
           experience!
         </p>
       </section>
-      <button className={s.circleBtn}>Explore</button>
+      <Link href="/destination">
+        <button className={s.circleBtn}>Explore</button>
+      </Link>
+      
     </main>
   );
 };

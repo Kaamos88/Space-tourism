@@ -6,7 +6,7 @@ const TechnologyNav = () => {
   const { activeTechnology } = useSelector((store) => store.technology);
   const dispatch = useDispatch();
   return (
-    <div className={s.nav}>
+    <nav className={s.nav}>
       <ul>
         <li
           onClick={() => dispatch(showTechnology(0))}
@@ -27,7 +27,7 @@ const TechnologyNav = () => {
           3
         </li>
       </ul>
-    </div>
+    </nav>
   );
 };
 

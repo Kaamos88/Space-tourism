@@ -7,7 +7,7 @@ const PlanetsNav = () => {
   const dispatch = useDispatch();
 
   return (
-    <div className={s.nav}>
+    <nav className={s.nav}>
       <ul>
         <li
           onClick={() => dispatch(showPlanet(0))}
@@ -34,7 +34,7 @@ const PlanetsNav = () => {
           Titan
         </li>
       </ul>
-    </div>
+    </nav>
   );
 };
 
