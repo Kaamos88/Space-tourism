@@ -43,6 +43,7 @@ h4 {
 }
 
 h5 {
+  margin: 0;
   font-size: 1.75rem;
   font-family: $font-second;
   font-weight: 400;
@@ -68,6 +69,13 @@ h5 {
 @font-face {
   font-family: 'Barlow Condensed Bold';
   src: url(../public/assets/fonts/BarlowCondensed-Bold.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Barlow Condensed Thin';
+  src: url(../public/assets/fonts/BarlowCondensed-Thin.ttf);
   font-weight: normal;
   font-style: normal;
 }

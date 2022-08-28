@@ -18,6 +18,9 @@
   margin: 0;
   display: flex;
   padding-left: 10%;
+  .active {
+    border-bottom: 3px solid #fff;
+  }
   li {
     cursor: pointer;
     text-transform: uppercase;
@@ -27,12 +30,8 @@
     padding: 2rem 0;
     margin: 0 2rem;
     border-bottom: 3px solid transparent;
-    &:first-child {
-      border-bottom: 3px solid #fff;
-    }
-    &:hover{
+    &:hover:not(.active){
       border-bottom: 3px solid rgb(194, 194, 194);
-
     }
   }
   span{

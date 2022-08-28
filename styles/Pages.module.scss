@@ -1,0 +1,23 @@
+@import 'variables';
+
+.app {
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.home {
+  background-image: url(../public/assets/home/background-home-desktop.jpg);
+}
+
+.destination {
+  background-image: url(../public/assets/destination/background-destination-desktop.jpg);
+}
+
+.crew {
+  background-image: url(../public/assets/crew/background-crew-desktop.jpg);
+}
+
+.technology {
+  background-image: url(../public/assets/technology/background-technology-desktop.jpg);
+}

@@ -6,37 +6,47 @@
   justify-content: space-between;
   align-items: flex-end;
   width: 100%;
+  h1 {
+    padding: 2rem 0;
+  }
+  h5 {
+    color: $second-color;
+  }
 }
 
 .circleBtn {
   border-radius: 100%;
   border: 0;
-  width: 274px;
-  height: 274px;
+  width: 17.125rem;
+  height: 17.125rem;
   margin-right: 15rem;
   margin-bottom: 12rem;
   text-transform: uppercase;
   font-family: $font-prime;
   font-weight: 400;
-  font-size: 1.75rem;
+  font-size: 2rem;
+  color: $prime-color;
   &:hover{
     animation: hoverBtn .3s ease;
-    outline: 4rem solid rgba(110, 110, 110, 0.7);
+    outline: 4rem solid rgba(151, 151, 151, 0.7);
   }
 }
 
 .text {
-  font-size: 20px;
-  line-height: 32px;
+  margin: 0;
+  font-size: 23px;
+  line-height: 2rem;
+  font-family: $body-text;
+  color: $second-color;
  }
 
 .welcomeText {
-  width: 450px;
-  height: 382px;
+  width: 28.125rem;
+  height: 23.875rem;
   margin: 10rem;
 }
 
 @keyframes hoverBtn {
-  from {outline: 0rem solid rgba(110, 110, 110, 0.7);}
-  to {outline: 4rem solid rgba(110, 110, 110, 0.7);}
+  from {outline: 0rem solid rgba(151, 151, 151, 0.7);}
+  to {outline: 4rem solid rgba(151, 151, 151, 0.7);}
 }

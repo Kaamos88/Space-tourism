@@ -1,12 +1,11 @@
 import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.scss";
+import s from "../styles/Pages.module.scss";
 import Main from "../components/Main";
 import Nav from "../components/Nav";
 
 export default function Home() {
   return (
-    <div className={styles.app}>
+    <div className={`${s.app} ${s.home}`}>
       <Head>
         <title>Space tourism</title>
         <meta
@@ -15,7 +14,7 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon-32x32.png" />
       </Head>
-      <Nav />
+      <Nav home={true} />
       <Main />
     </div>
   );
