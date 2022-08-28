@@ -1,0 +1,24 @@
+@import '/styles/variables';
+
+.nav{
+  ul {
+    display: flex;
+    padding-left: 0;
+    .active {
+      border-bottom: 3px solid #fff;
+    }
+    li{
+      cursor: pointer;
+      margin: 1rem 2rem 1rem 0;
+      padding: 1rem 0;
+      list-style: none;
+      text-transform: uppercase;
+      font-family: $body-text;
+      letter-spacing: 2.6px;
+      &:hover:not(.active){
+        border-bottom: 3px solid rgb(194, 194, 194);
+      }
+    }
+  }
+  
+}

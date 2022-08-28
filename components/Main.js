@@ -1,4 +1,4 @@
-import s from "../styles/Main.module.scss";
+import s from "../styles/components/Main.module.scss";
 
 const Main = () => {
   return (

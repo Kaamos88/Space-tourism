@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { useState } from "react";
-import s from "../styles/Nav.module.scss";
+import s from "../styles/components/Nav.module.scss";
 
 const Nav = ({ home, destination, crew, technology }) => {
   const nav00 = home ? s.active : "";
