@@ -6,7 +6,7 @@ import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { setNavNumber } from "../features/nav/navSlice";
 
-export default function Home() {
+const Home = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(setNavNumber("00"));
@@ -26,3 +26,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default Home;

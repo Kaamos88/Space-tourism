@@ -6,7 +6,7 @@ import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { setNavNumber, setHeading } from "../features/nav/navSlice";
 
-const crew = () => {
+const Crew = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(setNavNumber("02"));
@@ -21,4 +21,4 @@ const crew = () => {
   );
 };
 
-export default crew;
+export default Crew;

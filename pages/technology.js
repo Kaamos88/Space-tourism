@@ -7,7 +7,7 @@ import { useDispatch } from "react-redux";
 import { setNavNumber, setHeading } from "../features/nav/navSlice";
 import TechnologySection from "../components/TechnologySection";
 
-const technology = () => {
+const Technology = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(setNavNumber("03"));
@@ -22,4 +22,4 @@ const technology = () => {
   );
 };
 
-export default technology;
+export default Technology;
