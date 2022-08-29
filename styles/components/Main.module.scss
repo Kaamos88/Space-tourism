@@ -2,30 +2,27 @@
 
 .main {
   display: flex;
-  height: 84%;
-  justify-content: space-between;
-  align-items: flex-end;
-  width: 100%;
+  flex-direction: column;
+  align-items: center;
   h1 {
-    padding: 2rem 0;
+    font-size: 5rem;
   }
-  h5 {
-    color: $second-color;
-  }
+}
+
+.welcomeText {
+  width: 328px;
 }
 
 .circleBtn {
   cursor: pointer;
   border-radius: 100%;
   border: 0;
-  width: 17.125rem;
-  height: 17.125rem;
-  margin-right: 15rem;
-  margin-bottom: 12rem;
+  width: 9.375rem;
+  height: 9.375rem;
   text-transform: uppercase;
   font-family: $font-prime;
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 1.25rem;
   color: $prime-color;
   &:hover{
     animation: hoverBtn .3s ease;
@@ -41,13 +38,39 @@
   color: $second-color;
  }
 
-.welcomeText {
-  width: 28.125rem;
-  height: 23.875rem;
-  margin: 10rem;
-}
+
 
 @keyframes hoverBtn {
   from {outline: 0rem solid rgba(151, 151, 151, 0.7);}
   to {outline: 4rem solid rgba(151, 151, 151, 0.7);}
+}
+
+@media screen and (min-width: 1024px) {
+  .main {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 85%;
+    width: 100%;
+    h1 {
+      padding: 2rem 0;
+    }
+    h5 {
+      color: $second-color;
+    }
+  }
+  .welcomeText {
+    width: 28.125rem;
+    height: 23.875rem;
+    margin: 10rem;
+  }
+
+  .circleBtn {
+    font-size: 2rem;
+    width: 17.125rem;
+    height: 17.125rem;
+    margin-right: 15rem;
+    margin-bottom: 12rem;
+  }
+  
 }
