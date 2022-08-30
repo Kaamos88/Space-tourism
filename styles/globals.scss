@@ -1,4 +1,4 @@
-@import 'variables';
+@import "variables";
 
 html,
 body {
@@ -20,15 +20,21 @@ a {
 
 // Global Headings
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   margin: 0;
   font-family: $font-prime;
   font-weight: 400;
   text-transform: uppercase;
-} 
+}
 
 h1 {
-  font-size: 9.375rem;
+  font-size: 5rem;
+  @media screen and (min-width: 1024px) {
+    font-size: 9.375rem;
+  }
 }
 
 h2 {
@@ -45,37 +51,39 @@ h4 {
 
 h5 {
   margin: 0;
-  font-size: 1.75rem;
+  font-size: 1rem;
   font-family: $font-second;
   font-weight: 400;
   letter-spacing: 0.297rem;
   text-transform: uppercase;
+  @media screen and (min-width: 1024px) {
+    font-size: 1.75rem;
+  }
 }
 
-
 @font-face {
-  font-family: 'Bellefair';
+  font-family: "Bellefair";
   src: url(../public/assets/fonts/Bellefair-Regular.ttf);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Barlow Condensed';
+  font-family: "Barlow Condensed";
   src: url(../public/assets/fonts/BarlowCondensed-Regular.ttf);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Barlow Condensed Bold';
+  font-family: "Barlow Condensed Bold";
   src: url(../public/assets/fonts/BarlowCondensed-Bold.ttf);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Barlow Condensed Thin';
+  font-family: "Barlow Condensed Thin";
   src: url(../public/assets/fonts/BarlowCondensed-Thin.ttf);
   font-weight: normal;
   font-style: normal;

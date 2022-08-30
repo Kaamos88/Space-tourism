@@ -12,9 +12,13 @@
   width: 65%;
   background-color: rgba($second-color, 0.05);
   backdrop-filter: blur(25px);
-  &.close{
+  transition: ease-out 0.5s;
+  &.close {
     position: relative;
-    left: 1000px;
+    transform: translateX(100vh);
+  }
+  &.open {
+    transform: translateX(0);
   }
 }
 
@@ -43,14 +47,19 @@
 }
 
 .icon {
-  margin: 1rem;
+  margin: 1.5rem;
 }
-.closeIcon {
-  padding: 1rem;
+.closeIcon,
+.openIcon {
+  padding: 1.5rem;
   svg {
-    margin-top: .7rem;
+    margin-top: 0.7rem;
     float: right;
   }
+}
+
+.displayNone {
+  display: none;
 }
 
 @media screen and (min-width: 1024px) {
@@ -61,6 +70,10 @@
   }
   .navContainer {
     width: 55%;
+    &.close {
+      position: static;
+      transform: translateX(0);
+    }
   }
   .navBar {
     height: auto;
@@ -95,7 +108,17 @@
   .icon {
     margin-left: 4rem;
   }
-  .closeIcon {
+  .closeIcon,
+  .openIcon {
     display: none;
+  }
+}
+
+@keyframes menuSlideOut {
+  from {
+    left: 100px;
+  }
+  to {
+    left: 1000px;
   }
 }

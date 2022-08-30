@@ -20,7 +20,7 @@ const Nav = () => {
         </svg>
       </div>
       <div className={s.vl}></div>
-      <nav className={`${s.navContainer} ${!isOpen ? s.close : ""}`}>
+      <nav className={`${s.navContainer} ${!isOpen ? s.close : s.open}`}>
         <div className={s.closeIcon}>
           <div onClick={() => dispatch(closeNav())}>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21">
@@ -62,10 +62,10 @@ const Nav = () => {
           </Link>
         </ul>
       </nav>
-      <div>
-        <div onClick={() => dispatch(openNav())}>
+      <div className={!isOpen ? s.openIcon : s.displayNone}>
+        <div onClick={() => dispatch(openNav())} >
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21">
-            <g fill="#D0D6F9" fill-rule="evenodd">
+            <g fill="#D0D6F9" fillRule="evenodd">
               <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z" />
             </g>
           </svg>
