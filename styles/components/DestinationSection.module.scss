@@ -1,45 +1,89 @@
-@import '/styles/variables';
+@import "/styles/variables";
 
 .module {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 .imgSection {
-  margin-top: 5rem;
+  margin-top: 2rem;
+  text-align: center;
+  @media screen and (min-width: 1024px) {
+    margin-top: 5rem;
+  }
   img {
-    padding-left: 3rem;
+    width: 50%;
+    margin: 0 auto;
+    @media screen and (min-width: 1024px) {
+      width: auto;
+      padding-left: 3rem;
+    }
   }
 }
 
 .textSection {
-  margin: 0rem 12rem 0 0;
+  text-align: center;
+  @media screen and (min-width: 1024px) {
+    text-align: start;
+    margin: 0rem 12rem 0 0;
+  }
 }
 
 .description {
-  width: 27.75rem;
+  width: 85%;
+  margin: 0 auto;
+  @media screen and (min-width: 1024px) {
+    margin: 0;
+    width: 27.75rem;
+  }
+
   h2 {
-    margin: 2rem 0;
+    @media screen and (min-width: 1024px) {
+      margin: 2rem 0;
+    }
   }
   p {
     color: $second-color;
     line-height: 2rem;
+    margin-top: 0;
   }
 }
 
 .vl {
-  width: 100%;
+  width: 85%;
+  margin: 0 auto;
   padding: 1px;
   border-bottom: 1px solid rgba(110, 110, 110, 0.7);
+  @media screen and (min-width: 1024px) {
+    width: 100%;
+  }
 }
 
 .footer {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5rem;
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
   div {
     width: 50%;
   }
   p {
     text-transform: uppercase;
-    font-size: 1.5rem;
+    @media screen and (min-width: 1024px) {
+      margin-top: 1rem;
+      margin-bottom: 0;
+      font-size: 0.875rem;
+    }
+    
   }
 }
+

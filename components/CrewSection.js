@@ -14,8 +14,9 @@ const CrewSection = () => {
         </div>
         <CrewNav />
       </section>
-      <section>
+      <section className={s.imgContainer}>
         <img src={person.images.webp} />
+        <div className={s.vl}></div>
       </section>
     </main>
   );

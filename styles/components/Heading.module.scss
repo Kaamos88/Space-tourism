@@ -1,11 +1,24 @@
 @import '/styles/variables';
 
 .heading {
-  width: 50%;
-  height: 10%;
+  width: 100%;
+  padding-top: 6rem; 
+  @media screen and (min-width: 1024px){
+    padding-top: 0;
+    width: 50%;
+    height: 10%;
+  }
+  
   h5{
-    padding-top: 3rem;
-    padding-left: 11rem;
+    text-align: center;
+    font-size: 1rem;
+    @media screen and (min-width: 1024px){
+      font-size: 1.75rem;
+      text-align: start;
+      padding-top: 3rem;
+      padding-left: 11rem;
+    }
+    
     span {
       color: #979797;
       font-family: $font-second-bold;

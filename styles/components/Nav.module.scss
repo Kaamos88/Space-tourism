@@ -1,11 +1,10 @@
 @import "/styles/variables";
 
 .container {
-  position: fixed;
+  position: absolute;
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 100%;
 }
 
 .navContainer {
@@ -14,11 +13,13 @@
   backdrop-filter: blur(25px);
   transition: ease-out 0.5s;
   &.close {
-    position: relative;
-    transform: translateX(100vh);
+    display: none;
   }
   &.open {
-    transform: translateX(0);
+    height: 100vh;
+    @media screen and (min-width: 1024px) {
+      height: auto;
+    }
   }
 }
 
@@ -111,14 +112,5 @@
   .closeIcon,
   .openIcon {
     display: none;
-  }
-}
-
-@keyframes menuSlideOut {
-  from {
-    left: 100px;
-  }
-  to {
-    left: 1000px;
   }
 }
