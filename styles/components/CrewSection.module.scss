@@ -1,4 +1,4 @@
-@import '/styles/variables';
+@import "/styles/variables";
 
 .crewModule {
   display: flex;
@@ -8,7 +8,7 @@
     height: 75%;
     justify-content: space-around;
     align-items: flex-end;
-  } 
+  }
   section {
     text-align: center;
     @media screen and (min-width: 1024px) {
@@ -18,15 +18,18 @@
     img {
       height: 15rem;
       @media screen and (min-width: 1024px) {
-        width: auto;
+        height: auto;
       }
-    }   
+    }
   }
 
   .imgContainer {
     width: 85%;
     padding-top: 5rem;
     margin: 0 auto;
+    @media screen and (min-width: 1024px) {
+      width: 50%;
+    }
   }
 
   .text {
@@ -46,7 +49,7 @@
       color: #979797;
     }
     h3 {
-      padding: .5rem 0;
+      padding: 0.5rem 0;
       @media screen and (min-width: 1024px) {
         padding: 1.5rem 0;
       }
@@ -71,4 +74,3 @@
     display: none;
   }
 }
-

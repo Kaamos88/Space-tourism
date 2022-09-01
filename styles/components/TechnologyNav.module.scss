@@ -3,8 +3,12 @@
 .nav {
   padding-left: 11rem;
   ul {
+    display: flex;
     padding: 0;
     list-style: none;
+    @media screen and (min-width: 1024px) {
+      display: block;
+    }
     .active {
       background-color: rgb(255,255,255);
       border: 1px solid transparent;

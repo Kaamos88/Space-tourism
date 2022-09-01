@@ -2,9 +2,17 @@
 
 .technologyModule { 
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+  }
   .textSection {
     display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 1024px) {
+      flex-direction: row;
+    }
     .text {
       margin-top: 3rem;
       margin-left: 3rem;

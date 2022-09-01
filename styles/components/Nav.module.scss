@@ -14,6 +14,9 @@
   transition: ease-out 0.5s;
   &.close {
     display: none;
+    @media screen and (min-width: 1024px) {
+      display: inline;
+    }
   }
   &.open {
     height: 100vh;
