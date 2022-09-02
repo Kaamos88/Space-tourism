@@ -1,29 +1,56 @@
 @import '/styles/variables';
 
 .technologyModule { 
+  height: 70%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: column-reverse;
+  justify-content: space-around;
   @media screen and (min-width: 1024px) {
     flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+
   }
   .textSection {
+    text-align: center;
     display: flex;
     flex-direction: column;
     @media screen and (min-width: 1024px) {
+      text-align: start;
       flex-direction: row;
     }
     .text {
-      margin-top: 3rem;
-      margin-left: 3rem;
+      width: 85%;
+      margin: 0 auto;
+      
+      @media screen and (min-width: 1024px) {
+        text-align: start;
+        flex-direction: row;
+        margin-top: 3rem;
+        margin-left: 3rem;
+      }
     }
     p { 
-    width: 29.375rem;
+      line-height: 26px;
+      &:first-of-type {
+        letter-spacing: 2.36px;
+      }
+    @media screen and (min-width: 1024px) {
+      width: 29.375rem;
+      &:first-of-type {
+        letter-spacing: 2.7px;
+      }
+    }
     }
   }
   .image {
     img{
-      float: right;
+      margin-top: 2rem;
+      width: 100%;
     }
+    @media screen and (min-width: 1024px) {
+      margin: 0;
+      width: auto;
+    }    
   }
 }

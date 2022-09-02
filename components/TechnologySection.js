@@ -21,7 +21,7 @@ const TechnologySection = () => {
         </div>
       </section>
       <section className={s.image}>
-        <img src={width > 1024 ? technology.images.portrait : technology.images.landscape} />
+        {width > 1024 ? <img src={technology.images.portrait} /> : <img src={technology.images.landscape} />}
       </section>
     </main>
   );
