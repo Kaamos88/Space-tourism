@@ -5,6 +5,11 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  @media screen and (min-width: 1024px) {
+    align-items: center;
+    position: static;
+    height: 15%;
+  }
 }
 
 .navContainer {
@@ -12,6 +17,9 @@
   background-color: rgba($second-color, 0.05);
   backdrop-filter: blur(25px);
   transition: ease-out 0.5s;
+  @media screen and (min-width: 1024px) {
+    width: 55%;
+  }
   &.close {
     display: none;
     @media screen and (min-width: 1024px) {
@@ -32,6 +40,15 @@
   flex-direction: column;
   padding-left: 1%;
   padding-top: 20%;
+  @media screen and (min-width: 1024px) {
+    height: auto;
+    flex-direction: row;
+    padding-left: 10%;
+    padding-top: 0;
+    .active {
+            border-bottom: 3px solid #fff;
+          }
+  }
   li {
     cursor: pointer;
     text-transform: uppercase;
@@ -40,6 +57,13 @@
     list-style: none;
     padding: 1rem 0;
     margin: 0 2rem;
+    @media screen and (min-width: 1024px) {
+      padding: 2rem 0;
+      border-bottom: 3px solid transparent;
+      &:hover:not(.active) {
+        border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+      }
+    }
   }
   span {
     font-family: $font-second-bold;
@@ -48,58 +72,7 @@
 
 .vl {
   display: none;
-}
-
-.icon {
-  margin: 1.5rem;
-}
-.closeIcon,
-.openIcon {
-  padding: 1.5rem;
-  svg {
-    margin-top: 0.7rem;
-    float: right;
-  }
-}
-
-.displayNone {
-  display: none;
-}
-
-@media screen and (min-width: 1024px) {
-  .container {
-    align-items: center;
-    position: static;
-    height: 15%;
-  }
-  .navContainer {
-    width: 55%;
-    &.close {
-      position: static;
-      transform: translateX(0);
-    }
-  }
-  .navBar {
-    height: auto;
-    flex-direction: row;
-    padding-left: 10%;
-    padding-top: 0;
-    .active {
-      border-bottom: 3px solid #fff;
-    }
-    li {
-      cursor: pointer;
-      letter-spacing: 0.169rem;
-      font-size: 1rem;
-      padding: 2rem 0;
-      margin: 0 2rem;
-      border-bottom: 3px solid transparent;
-      &:hover:not(.active) {
-        border-bottom: 3px solid rgba(255, 255, 255, 0.5);
-      }
-    }
-  }
-  .vl {
+  @media screen and (min-width: 1024px) {
     display: block;
     position: relative;
     left: 50px;
@@ -108,12 +81,26 @@
     padding: 1px;
     border-bottom: 1px solid rgba(110, 110, 110, 0.7);
   }
+}
 
-  .icon {
+.icon {
+  margin: 1.5rem;
+  @media screen and (min-width: 1024px) {
     margin-left: 4rem;
   }
-  .closeIcon,
-  .openIcon {
+}
+.closeIcon,
+.openIcon {
+  padding: 1.5rem;
+  @media screen and (min-width: 1024px) {
     display: none;
   }
+  svg {
+    margin-top: 0.7rem;
+    float: right;
+  }
+}
+
+.displayNone {
+  display: none;
 }

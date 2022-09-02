@@ -7,13 +7,36 @@
   justify-content: space-evenly;
   height: 100%;
   text-align: center;
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 85%;
+    width: 100%;
+    text-align: start;
+  }
   h1 {
     padding: 1rem 0;
+    @media screen and (min-width: 1024px){
+
+    }
+  }
+  h5 {
+    color: $second-color;
+    font-size: 1rem;
+    @media screen and (min-width: 1024px){
+      font-size: 1.75rem;
+    }
   }
 }
 
 .welcomeText {
   width: 20.5rem;
+  @media screen and (min-width: 1024px){
+    width: 28.125rem;
+    height: 23.875rem;
+    margin: 10rem;  
+  }
 }
 
 .circleBtn {
@@ -27,6 +50,13 @@
   font-weight: 400;
   font-size: 1.25rem;
   color: $prime-color;
+  @media screen and (min-width: 1024px){
+    font-size: 2rem;
+    width: 17.125rem;
+    height: 17.125rem;
+    margin-right: 15rem;
+    margin-bottom: 12rem;
+  }
   &:hover{
     animation: hoverBtn .3s ease;
     outline: 4rem solid rgba(151, 151, 151, 0.7);
@@ -35,10 +65,14 @@
 
 .text {
   margin: 0;
-  font-size: 0.938rem;
+  font-size: 1rem;
   line-height: 1.563rem;
   font-family: $body-text;
   color: $second-color;
+  @media screen and (min-width: 1024px){
+    font-size: 1.438rem;
+    line-height: 2rem; 
+  }
  }
 
 
@@ -48,38 +82,3 @@
   to {outline: 4rem solid rgba(151, 151, 151, 0.7);}
 }
 
-@media screen and (min-width: 1024px) {
-  .main {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    height: 85%;
-    width: 100%;
-    text-align: start;
-    h1 {
-      padding: 2rem 0;
-    }
-    h5 {
-      color: $second-color;
-    }
-  }
-  .welcomeText {
-    width: 28.125rem;
-    height: 23.875rem;
-    margin: 10rem;
-  }
-
-  .text {
-    font-size: 1.438rem;
-    line-height: 2rem;
-  }
-
-  .circleBtn {
-    font-size: 2rem;
-    width: 17.125rem;
-    height: 17.125rem;
-    margin-right: 15rem;
-    margin-bottom: 12rem;
-  }
-  
-}

@@ -17,7 +17,6 @@ const Main = () => {
       <Link href="/destination">
         <button className={s.circleBtn}>Explore</button>
       </Link>
-      
     </main>
   );
 };

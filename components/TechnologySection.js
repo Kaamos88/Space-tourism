@@ -4,12 +4,12 @@ import TechnologyNav from "./TechnologyNav";
 
 const TechnologySection = () => {
   let width;
-  if (typeof window !== 'undefined') {
-     width = screen.width;
+  if (typeof window !== "undefined") {
+    width = screen.width;
   }
-  console.log(width)
   const { technology } = useSelector((store) => store.technology);
-  const image = width > 1024 ? technology.images.portrait : technology.images.landscape;
+  const image =
+    width > 1024 ? technology.images.portrait : technology.images.landscape;
   return (
     <main className={s.technologyModule}>
       <section className={s.textSection}>
@@ -21,7 +21,11 @@ const TechnologySection = () => {
         </div>
       </section>
       <section className={s.image}>
-        {width > 1024 ? <img src={technology.images.portrait} /> : <img src={technology.images.landscape} />}
+        {width > 1024 ? (
+          <img src={technology.images.portrait} />
+        ) : (
+          <img src={technology.images.landscape} />
+        )}
       </section>
     </main>
   );

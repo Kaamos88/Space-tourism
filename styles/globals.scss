@@ -69,6 +69,10 @@ h5 {
   text-transform: uppercase;
 }
 
+p {
+  color: $second-color;
+}
+
 @font-face {
   font-family: "Bellefair";
   src: url(../public/assets/fonts/Bellefair-Regular.ttf);
