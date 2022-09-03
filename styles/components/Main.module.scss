@@ -7,6 +7,9 @@
   justify-content: space-evenly;
   height: 100%;
   text-align: center;
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    justify-content: center;
+  }
   @media screen and (min-width: 1024px) {
     flex-direction: row;
     justify-content: space-between;
@@ -32,6 +35,10 @@
 
 .welcomeText {
   width: 20.5rem;
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    margin: 8rem;
+    width: 60%;
+  }
   @media screen and (min-width: 1024px){
     width: 28.125rem;
     height: 23.875rem;
@@ -50,6 +57,11 @@
   font-weight: 400;
   font-size: 1.25rem;
   color: $prime-color;
+  @media screen and (min-width: 768px) and (max-width: 1023px){
+    font-size: 2rem;
+    width: 15.125rem;
+    height: 15.125rem;
+  }
   @media screen and (min-width: 1024px){
     font-size: 2rem;
     width: 17.125rem;

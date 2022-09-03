@@ -17,18 +17,21 @@
   background-color: rgba($second-color, 0.05);
   backdrop-filter: blur(25px);
   transition: ease-out 0.5s;
+  @media screen and (min-width: 768px) and (max-width: 1023px){
+   width: auto;
+  }
   @media screen and (min-width: 1024px) {
-    width: 55%;
+   width: 55%;
   }
   &.close {
     display: none;
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 768px) {
       display: inline;
     }
   }
   &.open {
     height: 100vh;
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 768px) {
       height: auto;
     }
   }
@@ -40,14 +43,18 @@
   flex-direction: column;
   padding-left: 1%;
   padding-top: 20%;
-  @media screen and (min-width: 1024px) {
-    height: auto;
+  @media screen and (min-width: 768px) and (max-width: 1023px){
+    margin: 0 2rem;
+  }
+  @media screen and (min-width: 768px) {
     flex-direction: row;
-    padding-left: 10%;
     padding-top: 0;
     .active {
             border-bottom: 3px solid #fff;
           }
+  }
+  @media screen and (min-width: 1024px){
+    padding-left: 10%;
   }
   li {
     cursor: pointer;
@@ -57,6 +64,10 @@
     list-style: none;
     padding: 1rem 0;
     margin: 0 2rem;
+    @media screen and (min-width: 768px) and (max-width: 1023px){
+      padding: 2rem 0;
+      margin: 0 1rem;
+    }
     @media screen and (min-width: 1024px) {
       padding: 2rem 0;
       border-bottom: 3px solid transparent;
@@ -67,6 +78,9 @@
   }
   span {
     font-family: $font-second-bold;
+    @media screen and (min-width: 768px) and (max-width: 1023px){
+      display: none;
+    }
   }
 }
 
@@ -85,6 +99,9 @@
 
 .icon {
   margin: 1.5rem;
+  @media screen and (min-width: 768px) and (max-width: 1023px){
+   margin: 1.2rem 1rem 0 2rem;
+   }
   @media screen and (min-width: 1024px) {
     margin-left: 4rem;
   }
@@ -92,7 +109,7 @@
 .closeIcon,
 .openIcon {
   padding: 1.5rem;
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
   svg {
