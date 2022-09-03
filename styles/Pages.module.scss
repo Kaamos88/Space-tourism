@@ -4,12 +4,6 @@
   background-size: cover;
   width: 100vw;
   height: 100vh;
-  &.destination {
-    height: auto;
-    @media screen and (min-width: 1024px) {
-      height: 100vh;
-    }    
-  }
 }
 
 .home {

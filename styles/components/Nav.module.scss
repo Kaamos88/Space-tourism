@@ -5,9 +5,11 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
     align-items: center;
     position: static;
+  }
+  @media screen and (min-width: 1024px) {
     height: 15%;
   }
 }

@@ -3,11 +3,20 @@
 .crewModule {
   display: flex;
   flex-direction: column-reverse;
+  width: 85%;
+  margin: 0 auto;
+  @media screen and (min-width: 768px) and (max-width: 1023px){
+    width: 70%;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 75%;
+  }
   @media screen and (min-width: 1024px) {
     flex-direction: row;
     height: 75%;
     justify-content: space-around;
     align-items: flex-end;
+    width: auto;
   }
   section {
     text-align: center;
@@ -16,7 +25,10 @@
       width: 50%;
     }
     img {
-      height: 15rem;
+      height: 19rem;
+      @media screen and (min-width: 768px) and (max-width: 1023px){
+        height: 33rem;
+      }
       @media screen and (min-width: 1024px) {
         height: auto;
       }
@@ -24,21 +36,31 @@
   }
 
   .imgContainer {
-    width: 85%;
+    width: 100%;
     padding-top: 5rem;
     margin: 0 auto;
+    @media screen and (min-width: 768px) and (max-width: 1023px){
+      padding: 0;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+    }
     @media screen and (min-width: 1024px) {
       width: 50%;
     }
   }
 
   .text {
-    width: 85%;
     align-self: center;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+    @media screen and (min-width: 768px) and (max-width: 1023px){
+      flex-direction: column;
+      margin-top: .5rem;
+      z-index: 30;
+    }
     @media screen and (min-width: 1024px) {
       flex-direction: column;
       align-items: flex-start;
@@ -46,6 +68,7 @@
       margin-left: 11rem;
     }
     h4 {
+
       color: #979797;
     }
     h3 {
@@ -60,6 +83,11 @@
     height: 10rem;
     color: $second-color;
     line-height: 2rem;
+    @media screen and (min-width: 768px) and (max-width: 1023px){
+      width: 80%;
+      height: 8rem;
+      margin: 0 auto;
+    }
     @media screen and (min-width: 1024px) {
       width: 26rem;
     }
@@ -70,7 +98,7 @@
   margin: -5px auto;
   padding: 1px;
   border-bottom: 1px solid rgba(110, 110, 110, 0.7);
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
